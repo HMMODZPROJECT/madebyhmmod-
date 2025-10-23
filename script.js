@@ -1,4 +1,4 @@
-// Channel Info
+// ===== CHANNEL INFO =====
 const channel = {
   name: "HM MODZ VIP",
   handle: "@hmmodzvipreal",
@@ -6,82 +6,77 @@ const channel = {
   footer: "HM MODZ VIP"
 };
 
-// File List
+// ===== FILE LIST DENGAN LOGO =====
 const files = [
-   {
+  {
     name: "PUBGM LOADER CRACKED",
     desc: "LATEST STABLE VERSION WITH PUBGM LOADER CRACKED",
     size: "36.8 MB",
-    link: "https://www.mediafire.com/file/ns10jeqpqiaj56g/HAHAHAHA+EASY+CRACKED+(1).apk/file"
+    link: "https://www.mediafire.com/file/ns10jeqpqiaj56g/HAHAHAHA+EASY+CRACKED+(1).apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
   {
     name: "FF INJECTOR",
     desc: "LATEST INJECTOR APK PANEL VIP",
     size: "23.08 MB",
-    link: "https://www.mediafire.com/file/voyxrwviutiw5bk/PANEL_ANDROID.zip/file"
+    link: "https://www.mediafire.com/file/voyxrwviutiw5bk/PANEL_ANDROID.zip/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
   {
     name: "INJECTOR FF NEW OB50",
     desc: "Dark Aura Injektor cracked",
     size: "19.7 MB",
-    link: "https://www.mediafire.com/file/kuh441hy3gf0gsr/DARK+AURA#cracked.apk/file"
+    link: "https://www.mediafire.com/file/kuh441hy3gf0gsr/DARK+AURA#cracked.apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
   {
     name: "Bloodstrike Loader",
     desc: "Loader, cracked key",
     size: "29 MB",
-    link: "https://www.mediafire.com/file/4qaeb0onh0q998a/ZR+MODZ+OFFICIAL#cracked.apk/file"
+    link: "https://www.mediafire.com/file/4qaeb0onh0q998a/ZR+MODZ+OFFICIAL#cracked.apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
   {
     name: "Harley Cheat Cracked",
     desc: "Cracked Login Key, Paste You Abstark key",
     size: "14.28 MB",
-    link: "https://www.mediafire.com/file/ob0fvf1r2hsgvcp/Harleycheat+Loader_4.0#Crackedbyhmmodz.apk/file"
+    link: "https://www.mediafire.com/file/ob0fvf1r2hsgvcp/Harleycheat+Loader_4.0#Crackedbyhmmodz.apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
   {
     name: "Anime Play Modded Premium",
     desc: "Premium Unlocked",
     size: "17.1 MB",
-    link: "https://www.mediafire.com/file/lgpf4fexwmyzvdk/AnimePlay_1.1.7.apk/file"
+    link: "https://www.mediafire.com/file/lgpf4fexwmyzvdk/AnimePlay_1.1.7.apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
   {
     name: "Arena Breakout Mod",
     desc: "Mod Menu",
     size: "1.21 MB",
-    link: "https://mega.nz/file/RU8DAJwR#bAI8lz3lPNeNQkZa4HcMmN0Wxaj-EkqxvWuOlOw2094"
+    link: "https://mega.nz/file/RU8DAJwR#bAI8lz3lPNeNQkZa4HcMmN0Wxaj-EkqxvWuOlOw2094",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
   {
     name: "FF Headtrick vip",
-    desc: "Headtrick vip,Random Key acces",
+    desc: "Headtrick vip",
     size: "14.2 MB",
-    link: "https://www.mediafire.com/file/h3vq1fj1dh8eozs/app+headtrik+albobx¡t#CrackedByhmmodz.apk/file"
-  },
-  {
-    name: "PUBGM IMGUI",
-    desc: "Imgui safe",
-    size: "67.8 MB",
-    link: "https://www.mediafire.com/file/apd5a29nwkiuja4/app_headtrik_albobx%25C2%25A1t%2523CrackedByhmmodz.apk/file"
-  },
-    {
-    name: "Ankus Panel CRACKED",
-    desc: "Cracked Key, Random Key, Use In root app",
-    size: "7.8 Mb",
-    link: "https://www.mediafire.com/file/8dntuh1ok6zzl4c/AnKus_Panel%2523Cracked_Key.apk/file"
-    }
+    link: "https://www.mediafire.com/file/apd5a29nwkiuja4/app_headtrik_albobx%25C2%25A1t%2523CrackedByhmmodz.apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
+  }
 ];
 
-// Set Channel Info
+// ===== SET CHANNEL INFO =====
 document.getElementById("channelName").innerText = channel.name;
 document.getElementById("channelDesc").innerText = channel.desc;
 document.getElementById("footerChannel").innerText = channel.footer;
 
-// ✅ Fungsi agar link download dibuka di Browser, bukan WebView
+// ===== FUNGSI DOWNLOAD BROWSER =====
 function openInBrowser(url) {
-  // Format khusus supaya terdeteksi Sketchware/Android WebView dan dialihkan ke browser
   window.location.href = "openbrowser://" + url;
 }
 
-// Render File Cards
+// ===== RENDER FILE CARDS =====
 const fileContainer = document.getElementById("fileContainer");
 
 function renderFiles(list) {
@@ -90,6 +85,7 @@ function renderFiles(list) {
     const card = document.createElement("div");
     card.className = "file-card";
     card.innerHTML = `
+      <img src="${f.logo}" alt="logo ${f.name}">
       <h3>${f.name}</h3>
       <p>${f.desc}</p>
       <p><strong>SIZE:</strong> ${f.size}</p>
@@ -101,79 +97,32 @@ function renderFiles(list) {
 
 renderFiles(files);
 
-// Search Function
+// ===== SEARCH FUNCTION =====
 const searchInput = document.getElementById("searchInput");
 searchInput.addEventListener("input", () => {
   const q = searchInput.value.toLowerCase();
   const filtered = files.filter(f =>
-    f.name.toLowerCase().includes(q) ||
-    f.desc.toLowerCase().includes(q)
+    f.name.toLowerCase().includes(q) || f.desc.toLowerCase().includes(q)
   );
   renderFiles(filtered);
 });
 
-// ==== HM MODZ MENU INTERAKSI (diperbaiki) ====
-document.addEventListener("DOMContentLoaded", () => {
-  const menuBtn = document.getElementById("menuBtn");
-  const sidePanel = document.getElementById("sidePanel");
-  const chatOwner = document.getElementById("chatOwner");
-  const webLainnya = document.getElementById("webLainnya");
-  const backToMenu = document.getElementById("backToMenu");
+// ===== HAMBURGER MENU IOS STYLE =====
+const menuIcon = document.getElementById("menuIcon");
+const sideMenu = document.getElementById("sideMenu");
+const closeBtn = document.getElementById("closeBtn");
 
-  // Helper: pastikan elemen ada
-  const has = (el) => el !== null && el !== undefined;
+menuIcon.addEventListener("click", () => {
+  sideMenu.classList.add("active");
+});
 
-  // Buka/Tutup Panel (gunakan class "show" supaya sesuai CSS yang saya berikan)
-  if (has(menuBtn) && has(sidePanel)) {
-    menuBtn.addEventListener("click", (e) => {
-      e.stopPropagation(); // biar klik icon nggak langsung nutup
-      sidePanel.classList.toggle("show");
-    });
+closeBtn.addEventListener("click", () => {
+  sideMenu.classList.remove("active");
+});
 
-    // jangan biarkan klik di dalam panel menutupnya
-    sidePanel.addEventListener("click", (e) => e.stopPropagation());
-  }
-
-  // Tutup panel kalau klik di luar (cek eksistensi elemen dulu)
-  document.addEventListener("click", (e) => {
-    if (!has(sidePanel) || !has(menuBtn)) return;
-
-    if (
-      sidePanel.classList.contains("show") &&
-      !sidePanel.contains(e.target) &&
-      !menuBtn.contains(e.target)
-    ) {
-      sidePanel.classList.remove("show");
-    }
-  });
-
-  // Tutup panel dengan tombol Escape
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && has(sidePanel) && sidePanel.classList.contains("show")) {
-      sidePanel.classList.remove("show");
-    }
-  });
-
-  // === Tombol Menu (prevent default agar tidak reload) ===
-  if (has(chatOwner)) {
-    chatOwner.addEventListener("click", (e) => {
-      e.preventDefault();
-      window.open("https://t.me/hmmodzvipreal", "_blank");
-      // sidePanel.classList.remove("show"); // uncomment kalau mau auto-close
-    });
-  }
-
-  if (has(webLainnya)) {
-    webLainnya.addEventListener("click", (e) => {
-      e.preventDefault();
-      window.open("https://myprofilehmmodz.netlify.app", "_blank");
-    });
-  }
-
-  if (has(backToMenu)) {
-    backToMenu.addEventListener("click", (e) => {
-      e.preventDefault();
-      window.open("https://hmmodzserverv2.netlify.app/", "_self");
-    });
+// Tutup menu jika klik di luar
+document.addEventListener("click", (e) => {
+  if (!sideMenu.contains(e.target) && !menuIcon.contains(e.target)) {
+    sideMenu.classList.remove("active");
   }
 });
