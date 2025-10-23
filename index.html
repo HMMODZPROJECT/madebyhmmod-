@@ -6,11 +6,12 @@
   <title>hmmodzvip</title>
   <link rel="stylesheet" href="style.css">
 
-  <!-- ✅ Pindahkan script counter ke sini -->
+  <!-- ✅ Load counter.dev dengan "defer" agar tidak blokir script utama -->
   <script 
     src="https://cdn.counter.dev/script.js" 
     data-id="ee96702e-5d99-4963-83f5-ac9bee7cca17" 
-    data-utcoffset="7">
+    data-utcoffset="7"
+    defer>
   </script>
 </head>
 <body>
@@ -34,6 +35,7 @@
     <div class="logo-container">
       <img src="logo.png" alt="Logo" class="logo">
     </div>
+
     <div class="channel-info">
       <h1 id="channelName">HM MODZ VIP</h1>
       <p id="channelHandle">
@@ -53,12 +55,13 @@
   <section id="fileContainer" class="file-container"></section>
 
   <footer>
-    <p>Copyright by <span id="footerChannel">HM MODZ VIP</span> | 
+    <p>Copyright by 
+      <span id="footerChannel">HM MODZ VIP</span> | 
       <a href="https://t.me/abouthmmodz" target="_blank">Join Telegram</a>
     </p>
   </footer>
 
-  <!-- ✅ Script kamu harus di-load PALING AKHIR -->
-  <script src="script.js"></script>
+  <!-- ✅ Pastikan script.js dimuat PALING AKHIR agar semua elemen HTML sudah siap -->
+  <script src="script.js" defer></script>
 </body>
 </html>
