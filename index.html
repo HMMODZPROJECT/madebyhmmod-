@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hmmodzvip</title>
+  <title>HM MODZ VIP</title>
   <link rel="stylesheet" href="style.css">
-
-  <!-- ✅ Load counter.dev dengan "defer" agar tidak blokir script utama -->
   <script 
     src="https://cdn.counter.dev/script.js" 
     data-id="ee96702e-5d99-4963-83f5-ac9bee7cca17" 
@@ -15,53 +13,51 @@
   </script>
 </head>
 <body>
-  <header>
-    <!-- ==== MENU GARIS TIGA HM MODZ ==== -->
-    <div class="hm-menu">
-      <div class="menu-btn" id="menuBtn">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/menu--v1.png" alt="menu" />
-      </div>
 
-      <div class="side-panel" id="sidePanel">
-        <ul>
-          <li><a href="#" id="chatOwner">💬 Chat Owner</a></li>
-          <li><a href="#" id="webLainnya">🌐 Web Lainnya</a></li>
-          <li><a href="#" id="backToMenu">🔙 Back to Menu</a></li>
-        </ul>
-      </div>
-    </div>
-    <!-- ==== AKHIR MENU ==== -->
+  <!-- NAVBAR HAMBURGER -->
+  <header class="navbar">
+    <div class="menu-icon" id="menuIcon">&#9776;</div>
+  </header>
 
+  <!-- SIDE MENU -->
+  <nav class="side-menu" id="sideMenu">
+    <div class="close-btn" id="closeBtn">❌</div>
+    <ul>
+      <li><a href="https://t.me/hmmodzvipreal" target="_blank">💬 Chat Owner</a></li>
+      <li><a href="https://madebyhmmodz.netlify.app" target="_blank">🌐 Web Lain</a></li>
+      <li><a href="index.html">🔙 Back to Menu</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER PROFILE -->
+  <header class="profile-header">
     <div class="logo-container">
-      <img src="logo.png" alt="Logo" class="logo">
+      <img src="logo.png" alt="Logo Profile" class="logo">
     </div>
-
     <div class="channel-info">
       <h1 id="channelName">HM MODZ VIP</h1>
-      <p id="channelHandle">
-        <a href="https://t.me/hmmodzvipreal" target="_blank">@hmmodzvipreal</a>
-      </p>
+      <p id="channelHandle"><a href="https://t.me/hmmodzvipreal" target="_blank">@hmmodzvipreal</a></p>
     </div>
   </header>
 
+  <!-- HERO / DESC -->
   <section class="hero">
-    <p id="channelDesc">Server Has Ready</p>
+    <p id="channelDesc">Website Download Cheat Free server direct by HM MODZ VIP, update setiap minggu</p>
   </section>
 
+  <!-- SEARCH -->
   <div class="search-box">
     <input type="text" id="searchInput" placeholder="🔍 Search files...">
   </div>
 
+  <!-- FILES -->
   <section id="fileContainer" class="file-container"></section>
 
   <footer>
-    <p>Copyright by 
-      <span id="footerChannel">HM MODZ VIP</span> | 
-      <a href="https://t.me/abouthmmodz" target="_blank">Join Telegram</a>
-    </p>
+    <p>Copyright by <span id="footerChannel">HM MODZ VIP</span> | 
+    <a href="https://t.me/abouthmmodz" target="_blank">Join Telegram</a></p>
   </footer>
 
-  <!-- ✅ Script.js harus dimuat terakhir tanpa defer -->
   <script src="script.js"></script>
 </body>
 </html>
