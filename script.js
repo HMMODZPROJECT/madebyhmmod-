@@ -113,54 +113,46 @@ searchInput.addEventListener("input", () => {
 });
 
 // ==== HM MODZ MENU INTERAKSI ====
-
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menuBtn");
   const sidePanel = document.getElementById("sidePanel");
+  const chatOwner = document.getElementById("chatOwner");
+  const webLainnya = document.getElementById("webLainnya");
+  const backToMenu = document.getElementById("backToMenu");
 
-  // Klik ikon => buka/tutup panel
-  menuBtn.addEventListener("click", () => {
-    sidePanel.classList.toggle("show");
-  });
-
-  // Klik di luar panel => tutup
-  document.addEventListener("click", (e) => {
-    if (!sidePanel.contains(e.target) && !menuBtn.contains(e.target)) {
-      sidePanel.classList.remove("show");
-    }
-  });
-
-document.addEventListener("DOMContentLoaded", () => {
-  const menuBtn = document.getElementById("menuBtn");
-  const sidePanel = document.getElementById("sidePanel");
-
+  // Buka/Tutup Panel
   if (menuBtn && sidePanel) {
-    menuBtn.addEventListener("click", () => {
+    menuBtn.addEventListener("click", (e) => {
+      e.stopPropagation(); // biar klik icon nggak langsung nutup
       sidePanel.classList.toggle("open");
     });
   }
 
-  // Tombol Chat Owner
-  const chatOwner = document.getElementById("chatOwner");
+  // Tutup panel kalau klik di luar
+  document.addEventListener("click", (e) => {
+    if (sidePanel.classList.contains("open") && 
+        !sidePanel.contains(e.target) && 
+        !menuBtn.contains(e.target)) {
+      sidePanel.classList.remove("open");
+    }
+  });
+
+  // === Tombol Menu ===
   if (chatOwner) {
     chatOwner.addEventListener("click", () => {
       window.open("https://t.me/hmmodzvipreal", "_blank");
     });
   }
 
-  // Tombol Web Lainnya
-  const webLainnya = document.getElementById("webLainnya");
   if (webLainnya) {
     webLainnya.addEventListener("click", () => {
       window.open("https://myprofilehmmodz.netlify.app", "_blank");
     });
   }
 
-  // Tombol Back to Menu
-  const backToMenu = document.getElementById("backToMenu");
   if (backToMenu) {
     backToMenu.addEventListener("click", () => {
-      window.open("https://madebyhmmodz.netlify.app/", "_self");
+      window.open("https://hmmodzserverv2.netlify.app/", "_self");
     });
   }
 });
