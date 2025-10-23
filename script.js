@@ -112,7 +112,7 @@ searchInput.addEventListener("input", () => {
   renderFiles(filtered);
 });
 
-// ==== HM MODZ MENU INTERAKSI ====
+// ==== HM MODZ MENU INTERAKSI (diperbaiki) ====
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menuBtn");
   const sidePanel = document.getElementById("sidePanel");
@@ -120,38 +120,59 @@ document.addEventListener("DOMContentLoaded", () => {
   const webLainnya = document.getElementById("webLainnya");
   const backToMenu = document.getElementById("backToMenu");
 
-  // Buka/Tutup Panel
-  if (menuBtn && sidePanel) {
+  // Helper: pastikan elemen ada
+  const has = (el) => el !== null && el !== undefined;
+
+  // Buka/Tutup Panel (gunakan class "show" supaya sesuai CSS yang saya berikan)
+  if (has(menuBtn) && has(sidePanel)) {
     menuBtn.addEventListener("click", (e) => {
       e.stopPropagation(); // biar klik icon nggak langsung nutup
-      sidePanel.classList.toggle("open");
+      sidePanel.classList.toggle("show");
     });
+
+    // jangan biarkan klik di dalam panel menutupnya
+    sidePanel.addEventListener("click", (e) => e.stopPropagation());
   }
 
-  // Tutup panel kalau klik di luar
+  // Tutup panel kalau klik di luar (cek eksistensi elemen dulu)
   document.addEventListener("click", (e) => {
-    if (sidePanel.classList.contains("open") && 
-        !sidePanel.contains(e.target) && 
-        !menuBtn.contains(e.target)) {
-      sidePanel.classList.remove("open");
+    if (!has(sidePanel) || !has(menuBtn)) return;
+
+    if (
+      sidePanel.classList.contains("show") &&
+      !sidePanel.contains(e.target) &&
+      !menuBtn.contains(e.target)
+    ) {
+      sidePanel.classList.remove("show");
     }
   });
 
-  // === Tombol Menu ===
-  if (chatOwner) {
-    chatOwner.addEventListener("click", () => {
+  // Tutup panel dengan tombol Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && has(sidePanel) && sidePanel.classList.contains("show")) {
+      sidePanel.classList.remove("show");
+    }
+  });
+
+  // === Tombol Menu (prevent default agar tidak reload) ===
+  if (has(chatOwner)) {
+    chatOwner.addEventListener("click", (e) => {
+      e.preventDefault();
       window.open("https://t.me/hmmodzvipreal", "_blank");
+      // sidePanel.classList.remove("show"); // uncomment kalau mau auto-close
     });
   }
 
-  if (webLainnya) {
-    webLainnya.addEventListener("click", () => {
+  if (has(webLainnya)) {
+    webLainnya.addEventListener("click", (e) => {
+      e.preventDefault();
       window.open("https://myprofilehmmodz.netlify.app", "_blank");
     });
   }
 
-  if (backToMenu) {
-    backToMenu.addEventListener("click", () => {
+  if (has(backToMenu)) {
+    backToMenu.addEventListener("click", (e) => {
+      e.preventDefault();
       window.open("https://hmmodzserverv2.netlify.app/", "_self");
     });
   }
