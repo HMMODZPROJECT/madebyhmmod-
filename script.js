@@ -130,16 +130,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Tombol-tombol menu
-  document.getElementById("chatOwner").addEventListener("click", () => {
-    alert("Chat Owner diklik");
-  });
+// Tombol-tombol menu
+document.getElementById("chatOwner").addEventListener("click", () => {
+  window.open("https://t.me/hmmodzvipreal", "_blank");
+});
 
-  document.getElementById("webLainnya").addEventListener("click", () => {
-    alert("Web Lainnya diklik");
-  });
+document.getElementById("webLainnya").addEventListener("click", () => {
+  window.open("https://myprofilehmmodz.netlify.app", "_blank");
+});
 
-  document.getElementById("backToMenu").addEventListener("click", () => {
-    alert("Back ke menu utama");
-  });
+document.getElementById("backToMenu").addEventListener("click", () => {
+  window.open("https://hmmodzserverv2.netlify.app/", "_self");
 });
