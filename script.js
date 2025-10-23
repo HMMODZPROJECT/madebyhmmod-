@@ -63,6 +63,13 @@ const files = [
     size: "14.2 MB",
     link: "https://www.mediafire.com/file/apd5a29nwkiuja4/app_headtrik_albobx%25C2%25A1t%2523CrackedByhmmodz.apk/file",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
+  },
+  {
+    name: "PUBGM LOADER CRACKED",
+    desc: "random Key, esp line, aimbot",
+    size: "11.27 MB",
+    link: "https://www.mediafire.com/file/apd5a29nwkiuja4/app_headtrik_albobx%25C2%25A1t%2523CrackedByhmmodz.apk/file"
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
   }
 ];
 
