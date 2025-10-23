@@ -1,3 +1,4 @@
+/* === RESET DAN DASAR === */
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -10,6 +11,7 @@ body {
   color: #fff;
 }
 
+/* === HEADER === */
 header {
   display: flex;
   flex-direction: column;
@@ -19,7 +21,7 @@ header {
   position: relative;
 }
 
-/* Logo container to hold glow */
+/* === LOGO DENGAN GLOW === */
 .logo-container {
   position: relative;
   width: 100px;
@@ -27,16 +29,6 @@ header {
   margin-bottom: 15px;
 }
 
-/* Logo image */
-.logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 15px;
-  z-index: 2;
-  position: relative;
-}
-
-/* Glow behind logo */
 .logo-container::before {
   content: "";
   position: absolute;
@@ -51,14 +43,22 @@ header {
   z-index: 1;
 }
 
-/* Channel Info */
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+/* === CHANNEL INFO === */
 .channel-info {
   text-align: center;
 }
 
 .channel-info h1 {
-  margin: 5px 0 5px 0;
-  font-size: 32px;      /* bigger for visibility */
+  margin: 5px 0;
+  font-size: 28px;
   font-weight: 700;
   color: #fff;
   letter-spacing: 1px;
@@ -68,47 +68,26 @@ header {
 .channel-info a {
   color: #ffe600;
   text-decoration: none;
-  font-size: 18px;      /* readable */
+  font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  display: block;
-  margin-top: 5px;
 }
 
 .channel-info a:hover {
   text-decoration: underline;
 }
 
-.channel-info h1 {
-  margin: 5px 0 2px 0;
-  font-size: 26px;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-.channel-info a {
-  color: #ffe600;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-}
-
-.channel-info a:hover {
-  text-decoration: underline;
-}
-
+/* === HERO === */
 .hero {
   padding: 30px;
   text-align: center;
 }
 
+/* === SEARCH BOX === */
 .search-box {
   text-align: center;
   margin: 20px auto;
 }
+
 .search-box input {
   width: 90%;
   max-width: 500px;
@@ -121,6 +100,7 @@ header {
   color: white;
 }
 
+/* === FILE LIST === */
 .file-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -134,22 +114,26 @@ header {
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.4);
   border: 1px solid rgba(255,255,255,0.05);
-  position: relative;
+  transition: transform 0.3s;
 }
+
 .file-card:hover {
   transform: translateY(-5px);
   border-color: #ff005c;
 }
+
 .file-card h3 {
   margin: 0;
   font-size: 18px;
   color: #00bfff;
 }
+
 .file-card p {
   color: #ccc;
   font-size: 14px;
   margin: 8px 0 12px;
 }
+
 .file-card .btn {
   display: inline-block;
   padding: 10px 14px;
@@ -159,10 +143,12 @@ header {
   text-decoration: none;
   font-weight: 600;
 }
+
 .file-card .btn:hover {
   background: linear-gradient(90deg, #ff2b7f, #742bff);
 }
 
+/* === FOOTER === */
 footer {
   text-align: center;
   padding: 15px;
@@ -170,161 +156,17 @@ footer {
   border-top: 2px solid #222;
   color: #aaa;
 }
+
 footer a {
   color: #ff4da6;
   text-decoration: none;
 }
+
 footer a:hover {
   text-decoration: underline;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: linear-gradient(90deg, #ff00cc, #3333ff);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px;
-  z-index: 999;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-.logo-area {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo {
-  height: 40px;
-  width: 40px;
-  border-radius: 10px;
-}
-
-.logo-text {
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.menu-icon {
-  font-size: 28px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.menu-icon:hover {
-  transform: scale(1.1);
-}
-
-body {
-  margin-top: 70px;
-}
-
-/* === SIDE MENU === */
-.side-menu {
-  position: fixed;
-  top: 0;
-  right: -280px;
-  width: 250px;
-  height: 100vh;
-  background: linear-gradient(180deg, #1a1a1a, #121212);
-  color: #fff;
-  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
-  transition: right 0.35s ease-in-out;
-  z-index: 998;
-  border-left: 2px solid #ff00cc;
-}
-
-.side-menu.active {
-  right: 0;
-}
-
-.side-menu ul {
-  list-style: none;
-  padding: 80px 25px;
-  margin: 0;
-}
-
-.side-menu ul li {
-  margin-bottom: 25px;
-}
-
-.side-menu ul li a {
-  display: block;
-  padding: 12px 15px;
-  background: linear-gradient(90deg, #ff00cc, #3333ff);
-  border-radius: 10px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  transition: 0.3s;
-}
-
-.side-menu ul li a:hover {
-  filter: brightness(1.2);
-  transform: scale(1.05);
-}
-
-.close-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-  font-size: 20px;
-  transition: 0.3s;
-}
-
-.close-btn:hover {
-  transform: rotate(90deg);
-}
-
-{
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  transition: all 0.2s ease;
-}
-
-body {
-  margin: 0;
-  background: linear-gradient(135deg, #0f101a, #1e1e2f);
-  color: #fff;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 0;
-  background: linear-gradient(90deg, #ff005c, #6100ff);
-  position: relative;
-}
-
-/* Logo container to hold glow */
-.logo-container {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  margin-bottom: 15px;
-}
-
-/* Logo image */
-.logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 15px;
-  z-index: 2;
-  position: relative;
-}
-/* ==== HM MODZ MENU BAR ==== */
-
-/* Kontainer menu */
+/* === MENU BAR HM MODZ === */
 .hm-menu {
   position: fixed;
   top: 15px;
@@ -332,7 +174,6 @@ header {
   z-index: 9999;
 }
 
-/* Tombol menu (ikon garis tiga) */
 .menu-btn img {
   width: 32px;
   height: 32px;
@@ -349,25 +190,24 @@ header {
   transform: scale(1.1);
 }
 
-/* ==== PANEL MENU FIX (menempel di atas) ==== */
+/* === PANEL MENU === */
 .side-panel {
   position: fixed;
   top: 0;
   left: -180px;
   width: 160px;
   height: 100%;
-  background: rgba(15, 15, 15, 0.7); /* sedikit lebih gelap agar kontras */
+  background: rgba(15, 15, 15, 0.8);
   backdrop-filter: blur(10px);
   box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
   transition: left 0.4s ease;
   z-index: 9998;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* biar isi mulai dari atas */
-  padding-top: 80px; /* jarak sedikit dari atas supaya tidak nabrak icon */
+  justify-content: flex-start;
+  padding-top: 80px;
 }
 
-/* Biar isi rata atas & tetap rapi */
 .side-panel ul {
   list-style: none;
   padding: 0;
