@@ -130,15 +130,37 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-// Tombol-tombol menu
-document.getElementById("chatOwner").addEventListener("click", () => {
-  window.open("https://t.me/hmmodzvipreal", "_blank");
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menuBtn");
+  const sidePanel = document.getElementById("sidePanel");
 
-document.getElementById("webLainnya").addEventListener("click", () => {
-  window.open("https://myprofilehmmodz.netlify.app", "_blank");
-});
+  if (menuBtn && sidePanel) {
+    menuBtn.addEventListener("click", () => {
+      sidePanel.classList.toggle("open");
+    });
+  }
 
-document.getElementById("backToMenu").addEventListener("click", () => {
-  window.open("https://hmmodzserverv2.netlify.app/", "_self");
+  // Tombol Chat Owner
+  const chatOwner = document.getElementById("chatOwner");
+  if (chatOwner) {
+    chatOwner.addEventListener("click", () => {
+      window.open("https://t.me/hmmodzvipreal", "_blank");
+    });
+  }
+
+  // Tombol Web Lainnya
+  const webLainnya = document.getElementById("webLainnya");
+  if (webLainnya) {
+    webLainnya.addEventListener("click", () => {
+      window.open("https://myprofilehmmodz.netlify.app", "_blank");
+    });
+  }
+
+  // Tombol Back to Menu
+  const backToMenu = document.getElementById("backToMenu");
+  if (backToMenu) {
+    backToMenu.addEventListener("click", () => {
+      window.open("https://madebyhmmodz.netlify.app/", "_self");
+    });
+  }
 });
