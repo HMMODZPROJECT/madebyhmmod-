@@ -70,6 +70,13 @@ const files = [
     size: "11.2 MB",
     link: "https://www.mediafire.com/file/okbkt08xv26zi16/XTHE+KING+LOADER_1.0+#Crack.apk/file",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
+  },
+  {
+    name: "PUBGM LOADER CRACKED",
+    desc: "random key, Esp Line, Aimbot",
+    size: "11.2 MB",
+    link: "https://www.mediafire.com/file/okbkt08xv26zi16/XTHE+KING+LOADER_1.0+#Crack.apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
   }
 ];
 
