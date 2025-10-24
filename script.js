@@ -72,10 +72,10 @@ const files = [
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
   {
-    name: "PUBGM LOADER CRACKED",
+    name: "IMMORTAL OFFICIAL CRACKED",
     desc: "random key, Esp Line, Aimbot",
     size: "11.2 MB",
-    link: "https://www.mediafire.com/file/okbkt08xv26zi16/XTHE+KING+LOADER_1.0+#Crack.apk/file",
+    link: "https://www.mediafire.com/file/8dntuh1ok6zzl4c/AnKus_Panel%2523Cracked_Key.apk/file?dkey=7gcutj0sj72&r=628",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   }
 ];
