@@ -77,6 +77,13 @@ const files = [
     size: "11.2 MB",
     link: "https://www.mediafire.com/file/8dntuh1ok6zzl4c/AnKus_Panel%2523Cracked_Key.apk/file?dkey=7gcutj0sj72&r=628",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
+  },
+  {
+    name: "Panel Non Root Cracked",
+    desc: "random key, Esp Line, Aimbot",
+    size: "5,6 MB",
+    link: "https://sfl.gl/VEA6rIv",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
   }
 ];
 
