@@ -91,7 +91,14 @@ const files = [
     size: "149.2 MB",
     link: "https://sfl.gl/PsKPXr",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
-      }
+      },
+   {
+    name: "Injector Ob51 Cracked",
+    desc: "Random Key, Aimbot, Hologram vip",
+    size: "11.7 MB",
+    link: "https://sfl.gl/mPyyjbw",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
+  },
 ];
 
 // ===== SET CHANNEL INFO =====
