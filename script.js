@@ -96,7 +96,7 @@ const files = [
     name: "Injector Ob51 Cracked",
     desc: "Random Key, Aimbot, Hologram vip",
     size: "11.7 MB",
-    link: "https://www.mediafire.com/file/y9a529rw8ig77h2/SHIVAM+STORE+V1_Arm加固.apk/file",
+    link: "https://t.me/shivam_h4cks_store/185?single",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
 ];
