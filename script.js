@@ -89,14 +89,14 @@ const files = [
     name: "Mlbb Cheat CRACKED",
     desc: "no key, Esp Line, Aimbot",
     size: "149.2 MB",
-    link: "https://sfl.gl/PsKPXr",
+    link: "https://www.mediafire.com/file/00orkxwxzn08sfh/Cracked_Key_mlbb.apk/file",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
       },
    {
     name: "Injector Ob51 Cracked",
     desc: "Random Key, Aimbot, Hologram vip",
     size: "11.7 MB",
-    link: "https://sfl.gl/mPyyjbw",
+    link: "https://www.mediafire.com/file/y9a529rw8ig77h2/SHIVAM+STORE+V1_Arm加固.apk/file",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
 ];
