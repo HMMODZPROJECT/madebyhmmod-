@@ -99,6 +99,13 @@ const files = [
     link: "https://t.me/shivam_h4cks_store/185?single",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
+  {
+    name: "Bst premium Cracked",
+    desc: "Random Key, Aimbot, esp line",
+    size: "11.45 MB",
+    link: "https://www.mediafire.com/file/k2kxjqtvmv7dubr/best+cheat+-+premium#RandomKeybyhmmodz.apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
+  },
 ];
 
 // ===== SET CHANNEL INFO =====
