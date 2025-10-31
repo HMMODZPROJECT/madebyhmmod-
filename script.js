@@ -101,7 +101,7 @@ const files = [
   },
   {
     name: "Bst premium Cracked",
-    desc: "Random Key, Aimbot, esp line",
+    desc: "Random Key, Aimbot, esp line, Pubgm 64 Bit",
     size: "11.45 MB",
     link: "https://www.mediafire.com/file/k2kxjqtvmv7dubr/best+cheat+-+premium#RandomKeybyhmmodz.apk/file",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
