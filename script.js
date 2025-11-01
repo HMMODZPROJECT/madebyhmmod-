@@ -115,7 +115,7 @@ document.getElementById("footerChannel").innerText = channel.footer;
 
 // ===== FUNGSI DOWNLOAD BROWSER =====
 function openInBrowser(url) {
-  window.location.href = url; // langsung buka URL aslinya
+window.location.href = "openbrowser://" + url;
 }
 
 // ===== RENDER FILE CARDS =====
