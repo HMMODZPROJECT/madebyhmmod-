@@ -1,8 +1,8 @@
 // ===== CHANNEL INFO =====
 const channel = {
-  name: "HM MODZ VIP",
+  name: "𝗛𝗠 𝗠𝗢𝗗𝗭 𝗩𝗜𝗣",
   handle: "@hmmodzvipreal",
-  desc: "Website Dowloand Cheat Free server direct by hmmodz vip, update setiap minggu",
+  desc: "𝚆𝚎𝚋𝚜𝚒𝚝𝚎 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙲𝚑𝚎𝚊𝚝/𝙼𝚘𝚍 𝙶𝚊𝚖𝚎 𝙵𝚛𝚎𝚎, 𝚜𝚎𝚛𝚟𝚎𝚛 𝚍𝚒𝚛𝚎𝚌𝚝 𝚋𝚢 𝙷𝙼 𝙼𝙾𝙳𝚉 𝚅𝙸𝙿",
   footer: "HM MODZ VIP"
 };
 
@@ -152,15 +152,11 @@ searchInput.addEventListener("input", () => {
 // ===== HAMBURGER MENU IOS STYLE =====
 const menuIcon = document.getElementById("menuIcon");
 const sideMenu = document.getElementById("sideMenu");
-const closeBtn = document.getElementById("closeBtn");
 
 menuIcon.addEventListener("click", () => {
   sideMenu.classList.add("active");
 });
 
-closeBtn.addEventListener("click", () => {
-  sideMenu.classList.remove("active");
-});
 
 // Tutup menu jika klik di luar
 document.addEventListener("click", (e) => {
