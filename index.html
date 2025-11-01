@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HM MODZ VIP</title>
   <link rel="stylesheet" href="style.css">
+
   <script 
     src="https://cdn.counter.dev/script.js" 
     data-id="ee96702e-5d99-4963-83f5-ac9bee7cca17" 
@@ -14,6 +15,9 @@
 </head>
 <body>
 
+  <!-- MATRIX BACKGROUND -->
+  <canvas id="matrix-bg"></canvas>
+
   <!-- NAVBAR HAMBURGER -->
   <header class="navbar">
     <div class="menu-icon" id="menuIcon">&#9776;</div>
@@ -21,17 +25,18 @@
 
   <!-- SIDE MENU -->
   <nav class="side-menu" id="sideMenu">
-    <div class="close-btn" id="closeBtn">❌</div>
     <ul>
       <li><a href="https://t.me/hmmodzvipreal" target="_blank">💬 Chat Owner</a></li>
-      <li><a href="https://myprofilehmmodz.netlify.app" target="_blank">🌐 Web Lain</a></li>
-      <li><a href="https://s7.nontonanimeid.boats/">💌 anime</a></li>
-      <li><a href="https://m.youtube.com/" target="_blank">🌐 YouTube</a></li>
-      <li><a href="https://www.instagram.com" target="_blank">🫂 Instagram</a></li>
+      <li><a href="https://abouthmmodzteam.netlify.app/" target="_blank">🧑‍💻 About Developer</a></li>
+      <li><a href="https://s7.nontonanimeid.boats/">💌 Anime Movie</a></li>
+      <li><a href="https://storehmmodz.netlify.app/" target="_blank">🛒HM MODZ VIP STORE</a></li>
       <li><a href="https://donghuastream.org/" target="_blank">👤Donghua</a></li>
-      <li><a href="https://gahahjwhhah.netlify.app/" target="_blank">🖥️ Chat User (Failed Data)</a></li>
-      <li><a href="https://servermaintance.netlify.app/" target="_blank">🌐 Deploy Web</a></li>
-      <li><a href="https://learnwebsitehmmodz.netlify.app/" target="_blank">🧑‍💻 Learn Web</a></li>
+      <li><a href="https://gahahjwhhah.netlify.app/" target="_blank">🖥️ Chat User (Fixed Server)</a></li>
+      <li><a href="https://servermaintance.netlify.app/" target="_blank">🌐 Deploy Web (Server Failed)</a></li>
+      <li><a href="https://exercism.org/" target="_blank">🧑‍💻 Learn Progammer</a></li>
+      <li><a href="https://donkey.to/" target="_blank">🎬 Streaming Movies</a></li>
+      <li><a href="https://plays.org/" target="_blank">🎮 Mini Game</a></li>
+      <li><a href="https://explorer.globe.engineer/" target="_blank">🤖 Open Ai</a></li>
     </ul>
   </nav>
 
@@ -41,14 +46,14 @@
       <img src="logo.png" alt="Logo Profile" class="logo">
     </div>
     <div class="channel-info">
-      <h1 id="channelName">HM MODZ VIP</h1>
+      <h1 id="channelName">𝗛𝗠 𝗠𝗢𝗗𝗭 𝗩𝗜𝗣</h1>
       <p id="channelHandle"><a href="https://t.me/hmmodzvipreal" target="_blank">@hmmodzvipreal</a></p>
     </div>
   </header>
 
   <!-- HERO / DESC -->
   <section class="hero">
-    <p id="channelDesc">Website Download Cheat Free server direct by HM MODZ VIP, update setiap minggu</p>
+    <p id="channelDesc">𝚆𝚎𝚋𝚜𝚒𝚝𝚎 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙲𝚑𝚎𝚊𝚝/𝙼𝚘𝚍 𝙶𝚊𝚖𝚎 𝙵𝚛𝚎𝚎, 𝚜𝚎𝚛𝚟𝚎𝚛 𝚍𝚒𝚛𝚎𝚌𝚝 𝚋𝚢 𝙷𝙼 𝙼𝙾𝙳𝚉 𝚅𝙸𝙿.</p>
   </section>
 
   <!-- SEARCH -->
@@ -59,11 +64,22 @@
   <!-- FILES -->
   <section id="fileContainer" class="file-container"></section>
 
+  <!-- ABOUT DEVELOPER -->
+  <section id="about-developer">
+    <h2>About Developer</h2>
+    <p>
+      Website ini dikembangkan oleh <strong>HM MODZ VIP</strong><br>
+      Fokus Kami Adalah pada Pembuatan Website dan Mod Game.<br>
+      Telegram: <a href="https://t.me/hmmodzvipreal" target="_blank">@hmmodzvipreal</a>
+    </p>
+    <p class="copyright">© 2025 HM MODZ VIP. All rights reserved.</p>
+  </section>
+
   <footer>
-    <p>Copyright by <span id="footerChannel">HM MODZ VIP</span> | 
-    <a href="https://t.me/abouthmmodz" target="_blank">Join Telegram</a></p>
+    <p>Copyright by <span id="footerChannel">HM MODZ VIP</span></p>
   </footer>
 
+  <script src="matrix.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
