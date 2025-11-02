@@ -106,6 +106,14 @@ const files = [
     link: "https://www.mediafire.com/file/k2kxjqtvmv7dubr/best+cheat+-+premium#RandomKeybyhmmodz.apk/file",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
+    {
+    name: "Netflix Premium Modz apk",
+    desc: "Premium Unlocked ",
+    size: "60 MB",
+    link: "https://www.mediafire.com/file/tuoksnwanvjnvdh/Netflix_Mirror_Premium_v1.0_adescargar.online.apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
+  },
+  
 ];
 
 // ===== SET CHANNEL INFO =====
