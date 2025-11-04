@@ -120,6 +120,13 @@ const files = [
     link: "https://www.mediafire.com/file/zp5mx1p63akgdjh/Grand+Theft+Auto+Vice+City+Stories+v1.0_Adescargar.online.apk/file",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
+  {
+    name: "Shadow Mod Pubgm",
+    desc: "Skip Login",
+    size: "14.77 MB",
+    link: "https://www.mediafire.com/file/oldlrwbfayv7493/SHADOWCHEAT+PREMIUM#hmmodz_str_crack.apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
+  },
   
 ];
 
