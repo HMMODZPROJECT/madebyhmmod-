@@ -113,6 +113,13 @@ const files = [
     link: "https://www.mediafire.com/file/tuoksnwanvjnvdh/Netflix_Mirror_Premium_v1.0_adescargar.online.apk/file",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
+  {
+    name: "Grand theft auto Vice Story",
+    desc: "Unlocked VIP game ",
+    size: "1,5 GB",
+    link: "https://www.mediafire.com/file/zp5mx1p63akgdjh/Grand+Theft+Auto+Vice+City+Stories+v1.0_Adescargar.online.apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
+  },
   
 ];
 
