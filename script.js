@@ -127,6 +127,13 @@ const files = [
     link: "https://www.mediafire.com/file/oldlrwbfayv7493/SHADOWCHEAT+PREMIUM#hmmodz_str_crack.apk/file",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
+  {
+    name: "Mars Loader Cracked by hmmodzvip",
+    desc: "Skip Login and Random Key",
+    size: "8.31 MB",
+    link: "https://www.mediafire.com/file/bvnybayu3qy44hn/Mars+Loader+Leaks+By+HM+MODZ+VIP.zip/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
+  },
   
 ];
 
