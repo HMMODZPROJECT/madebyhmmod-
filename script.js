@@ -148,6 +148,13 @@ const files = [
     link: "https://www.mediafire.com/file/v8jamk7vqttjujj/Melolo+Dracin+Premium.apk/file",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
+  {
+    name: "Panel Root/Non Root FF",
+    desc: "Auto Login",
+    size: "38.86 MB",
+    link: "https://www.mediafire.com/file/qil691dr5nag9gd/Panel+By+HM+MODZ+VIP.zip/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
+  },
   
 ];
 
