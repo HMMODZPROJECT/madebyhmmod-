@@ -155,6 +155,13 @@ const files = [
     link: "https://www.mediafire.com/file/qil691dr5nag9gd/Panel+By+HM+MODZ+VIP.zip/file",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
+  {
+    name: "Grand Theft Auto San Andreas",
+    desc: "Latest Apk",
+    size: "2,6 GB",
+    link: "https://www.mediafire.com/file/ox09gz6p323t4kp/Grand_Theft_Auto_San_Andreas_v2.11.277_ADESCARGAR.online.apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
+  },
   
 ];
 
