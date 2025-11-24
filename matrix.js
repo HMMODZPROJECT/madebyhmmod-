@@ -16,7 +16,7 @@ function draw() {
   ctx.fillStyle = "rgba(0, 8, 26, 0.05)"; // biru tua transparan
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  ctx.fillStyle = "#ff0000"; // teks merah
+  ctx.fillStyle = "#00aaff"; // teks merah
   ctx.font = fontSize + "px monospace";
 
   for (let i = 0; i < drops.length; i++) {
