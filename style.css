@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Arial;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(135deg, #060818, #0f172a, #020617);
+  color: #eaf6ff;
+  overflow-x: hidden;
+}
+
+
+#matrix-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+}
+
+
+#blurLayer {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 14, 30, 0.6);
+  backdrop-filter: blur(16px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+#blurLayer.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 10001;
+}
+
+.menu-icon {
+  font-size: 22px;
+  color: #7df9ff;
+  cursor: pointer;
+}
+
+.menu-icon:active {
+  transform: scale(0.9);
+}
+
+.nav-title {
+  font-weight: 600;
+  font-size: 13px;
+  color: #eaf6ff;
+}
+
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  height: 100vh;
+  background: linear-gradient(180deg, #050712, #0b1022);
+  backdrop-filter: blur(20px);
+  padding: 18px 14px;
+  z-index: 10000;
+  transition: right 0.35s cubic-bezier(0.25, 1, 0.25, 1);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.side-menu.active {
+  right: 0;
+}
+
+.side-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.side-close {
+  font-size: 20px;
+  cursor: pointer;
+  color: #cfeffd;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 16px 0;
+  margin: 0;
+}
+
+.side-menu li {
+  margin-bottom: 10px;
+}
+
+.side-menu a {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #bfeeff;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.side-menu a:hover {
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateX(-3px);
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: 90px auto 0;
+  padding: 14px;
+}
+
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.logo-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+
+.logo-container::before {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.5), transparent 60%);
+  filter: blur(24px);
+  z-index: 0;
+}
+
+.logo {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.channel-info h1 {
+  margin: 10px 0 4px;
+  font-size: 26px;
+}
+
+.channel-info a {
+  color: #7df9ff;
+  text-decoration: none;
+}
+
+
+.hero {
+  text-align: center;
+  opacity: 0.85;
+}
+
+
+.search-box {
+  text-align: center;
+  margin: 18px 0;
+}
+
+.search-box input {
+  width: 90%;
+  max-width: 560px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 999px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.05);
+  color: #eaf6ff;
+}
+
+
+.file-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.file-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(0, 0, 0, 0.2)
+  );
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: 0.35s;
+}
+
+.file-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 140, 255, 0.25);
+}
+
+.file-card img {
+  width: 86px;
+  height: 86px;
+  border-radius: 14px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.file-card h3 {
+  color: #7df9ff;
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.file-card p {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.file-card .btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00f2ff, #0066ff);
+  color: #00111c;
+  cursor: pointer;
+}
+
+.file-card.tap {
+  transform: scale(0.95);
+}
+
+
+#about-developer {
+  margin-top: 26px;
+  padding: 24px 10px;
+  text-align: center;
+  opacity: 0.9;
+  border-top: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+
+footer {
+  text-align: center;
+  padding: 16px 0;
+  opacity: 0.6;
+}
+
+
+@media (max-width: 640px) {
+  .nav-title {
+    display: none;
+  }
+
+  .side-menu {
+    width: 85vw;
+  }
+
+  .container {
+    margin-top: 70px;
+  }
+}
