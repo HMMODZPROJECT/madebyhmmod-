@@ -1,7 +1,7 @@
 const channel = {
   name: "𝗛𝗠 𝗠𝗢𝗗𝗭 𝗩𝗜𝗣",
   handle: "@hmmodzvipreal",
-  desc: "𝚠𝚎𝚋𝚜𝚒𝚝𝚎 𝚒𝚗𝚒 𝚍𝚒 𝚔𝚎𝚖𝚋𝚊𝚗𝚐𝚔𝚊𝚗 𝚘𝚕𝚎𝚑 𝙷𝙼 𝙼𝙾𝙳𝚉 𝚃𝙴𝙰𝙼",
+  desc: "USER IDIOT TOLOL KONTOL LU SEMUA ANJG PAKE DOANG TOLOL.",
   footer: "HM MODZ TEAM"
 };
 
