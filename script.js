@@ -23,7 +23,7 @@ const files = [
     name: "Kontol bapa lu",
     desc: "bapa lu di ewe monyet anjg",
     size: "36.8 MB",
-    link: "https://www.mediafire.com/file/ns10jeqpqiaj56g/HAHAHAHA+EASY+CRACKED+(1).apk/file",
+    link: "https://www.youareanidiot.cc/lol.html",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
   
