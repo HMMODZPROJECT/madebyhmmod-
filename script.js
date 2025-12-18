@@ -14,7 +14,7 @@ const fileContainer = document.getElementById("fileContainer");
 function openInBrowser(url) {
   blur.classList.add("active");
   setTimeout(() => {
-    window.location.href = "openbrowser://" + url;
+    window.location.href = url;
   }, 420);
 }
 
