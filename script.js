@@ -96,13 +96,6 @@ const files = [
     link: "https://www.mediafire.com/file/00orkxwxzn08sfh/Cracked_Key_mlbb.apk/file",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
    },
-   {
-    name: "Injector Ob51 Cracked",
-    desc: "Random Key, Aimbot, Hologram vip",
-    size: "11.7 MB",
-    link: "https://t.me/shivam_h4cks_store/185?single",
-    logo: "https://files.catbox.moe/9qs9kl.jpg"
-  },
   {
     name: "Bst premium Cracked",
     desc: "Random Key, Aimbot, esp line, Pubgm 64 Bit",
@@ -171,6 +164,13 @@ const files = [
     desc: "Skip Login Page,pubgm",
     size: "14,7 MB",
     link: "https://www.mediafire.com/file/okn2ei5fsmkpkoa/ROBOT+V4.1#Crackedbyhmmodz.apk/file",
+    logo: "https://files.catbox.moe/9qs9kl.jpg"
+  },
+  {
+    name: "Sensix Beta Cracked",
+    desc: "No Key, No Expired",
+    size: "11.7 MB",
+    link: "https://sfl.gl/VvrcxJv4",
     logo: "https://files.catbox.moe/9qs9kl.jpg"
   },
   
